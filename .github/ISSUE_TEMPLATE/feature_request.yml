@@ -1,0 +1,51 @@
+name: "✨ Solicitar Funcionalidade"
+description: "Proponha uma nova funcionalidade ou melhoria"
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sugerir uma funcionalidade! Preencha as informações abaixo.
+  
+  - type: textarea
+    id: problem
+    attributes:
+      label: "🤔 Qual é o problema?"
+      description: "Descreva o problema que essa funcionalidade resolveria"
+      placeholder: "Ex: É difícil quando..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: solution
+    attributes:
+      label: "💡 Sua Solução"
+      description: "Como você imagina essa funcionalidade?"
+      placeholder: "Descreva a solução de forma clara"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "🔄 Alternativas Consideradas"
+      description: "Outras abordagens que você pensou?"
+      placeholder: "Descreva alternativas..."
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: "📚 Contexto Adicional"
+      description: "Qualquer informação relevante"
+      placeholder: "Adicione links, exemplos, etc..."
+  
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✓ Checklist"
+      options:
+        - label: "Essa funcionalidade não foi proposta antes"
+          required: true
+        - label: "Ela está alinhada com o roadmap do projeto"
+          required: false

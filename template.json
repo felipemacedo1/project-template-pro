@@ -1,0 +1,39 @@
+{
+  "name": "project-template-pro",
+  "description": "Template open-source completo com padrões modernos de desenvolvimento, CI/CD e documentação.",
+  "version": "1.0.0",
+  "author": "Felipe Macedo",
+  "license": "MIT",
+  "repository": "https://github.com/felipemacedo1/project-template-pro",
+  "keywords": ["template", "open-source", "ci-cd", "github-actions", "best-practices"],
+  "features": [
+    "GitHub Actions CI/CD",
+    "Automated Testing",
+    "Code Linting & Formatting",
+    "Security Scanning",
+    "Conventional Commits",
+    "SemVer Versioning",
+    "Comprehensive Documentation",
+    "Issue Templates",
+    "Code of Conduct",
+    "Contributing Guide"
+  ],
+  "documentation": {
+    "readme": "README.md",
+    "contributing": "docs/CONTRIBUTING.md",
+    "security": "SECURITY.md",
+    "changelog": "docs/CHANGELOG.md",
+    "roadmap": "docs/ROADMAP.md",
+    "code_of_conduct": "docs/CODE_OF_CONDUCT.md"
+  },
+  "workflows": {
+    "ci": ".github/workflows/ci.yml",
+    "lint": ".github/workflows/lint.yml",
+    "security": ".github/workflows/security-scan.yml",
+    "release": ".github/workflows/release.yml"
+  },
+  "requirements": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

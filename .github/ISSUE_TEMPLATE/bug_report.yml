@@ -1,0 +1,67 @@
+name: "🐛 Relatar Bug"
+description: "Reporte um erro ou comportamento inesperado"
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um bug! Por favor, preencha os detalhes abaixo.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Descrição do Problema"
+      description: "Descreva o bug de forma clara e concisa"
+      placeholder: "Ex: Quando eu clico em X, a aplicação..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: steps
+    attributes:
+      label: "�� Passos para Reproduzir"
+      description: "Passos específicos para reproduzir o comportamento"
+      placeholder: |
+        1. Vá para '...'
+        2. Clique em '...'
+        3. Veja o erro...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected
+    attributes:
+      label: "✅ Comportamento Esperado"
+      description: "O que deveria acontecer?"
+      placeholder: "Descreva o comportamento esperado"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "📸 Screenshots (Opcional)"
+      description: "Adicione screenshots se aplicável"
+  
+  - type: textarea
+    id: environment
+    attributes:
+      label: "⚙️ Ambiente"
+      description: "Informações do seu ambiente"
+      placeholder: |
+        - OS: [e.g. Ubuntu 20.04]
+        - Node: [e.g. 16.0.0]
+        - Versão do Projeto: [e.g. 1.0.0]
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✓ Checklist"
+      options:
+        - label: "Busquei por issues duplicadas"
+          required: true
+        - label: "Li a documentação"
+          required: false
